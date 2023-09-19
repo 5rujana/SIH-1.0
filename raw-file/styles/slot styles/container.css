@@ -1,0 +1,101 @@
+.hospital-button{
+    
+    width: calc(22% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.hospital-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.specialization-button{
+    
+    width: calc(22% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.specialization-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.slot-button{
+    
+    width: calc(20% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.slots-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.slots-dep{
+    background-color: #d2d5ed;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.doctor-button{
+    
+    width: calc(22% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.doctors-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pay{
+    margin: 5px;
+    padding: 18px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.upiid-input{
+    margin: 5px;
+    padding: 15px 100px;
+    text-align: center;
+    border-color:#5c618d ;
+    border-radius:10px;
+    color: #fff;
+    border-style:solid;
+    cursor: pointer;
+}
