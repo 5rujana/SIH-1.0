@@ -8,7 +8,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const findOrCreate = require("mongoose-findorcreate");
 const app = express();
 
-mongoose.connect("mongodb://127.0.0.1:27017/usersihDB", {
+mongoose.connect("mongodb://127.0.0.1:27017/userDB", {
   useNewUrlParser: true,
 });
 
@@ -50,8 +50,28 @@ passport.deserializeUser(function (user, cb) {
 });
 
 app.get("/", (req, res) => {
+  res.render("home");
+});
+app.get("/login", (req, res) => {
   res.render("login");
 });
+
+app.get("/dashboard", (req, res) => {
+  res.render("dashboard");
+});
+
+app.get("/signup", (req, res) => {
+  res.render("signup");
+});
+
+app.get("/slots", (req, res) => {
+  res.render("slots");
+});
+
+app.get("/appointments", (req, res) => {
+  res.render("myappointments");
+});
+
 
 app.listen(3000, function (req, res) {
   console.log("Server is connected at port 3000");

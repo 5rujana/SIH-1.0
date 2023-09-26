@@ -37,27 +37,39 @@
     </div>
 </div>
 
-
 <div class="container">
     <div class="left-half">
-
+        <!-- Left half content -->
     </div>
-
     <div class="right-half">
-        <div class="login-box">
-            <h2>Login</h2>
+        <div class="sign-up-box">
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-id-card icon"></i>
+                <input type="text" id="aadhar" name="aadhar" placeholder="Aadhar Number" required>
+            </div>
+            <div class="input-group">
+                <i class="far fa-calendar-alt icon"></i>
+                <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+            </div>
             <div class="input-group">
                 <i class="fas fa-mobile-alt icon"></i>
                 <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" required>
             </div>
-        
             <div class="input-group">
                 <i class="fas fa-lock icon"></i>
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Sign Up</button>
         </div>
     </div>
-</div>
 </div>
 <%- include('partials/footer.ejs') %>

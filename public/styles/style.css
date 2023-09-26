@@ -1,0 +1,721 @@
+/* body css */
+
+.container{
+    display:flex;
+    width:100%;
+    height: 315px;
+    
+}
+.left-half,.right-half{
+    flex:1;
+    padding:20px;
+}
+
+/* appointment .container */
+
+.container-appointment{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+
+
+}
+
+.left-half-appointment{
+    margin-left: 70px;
+    padding-bottom: 3.2%;
+}
+
+.greeting{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.book-app-dashboard{
+    margin-top: 30px;
+    padding: 20px 45px;
+    font-size: 20px;
+    border: none;
+    background-color: #3c3f5c;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 6px;
+}
+.book-app-dashboard:hover{
+    opacity: 0.8;
+}
+.book-app-dashboard:active{
+    color: #3c3f5c;
+    background-color:white;
+    border-style:solid;
+}
+.name{
+    font-size: 35px;
+}
+
+.photo-one{
+    height:300px;
+}
+
+.photo-two{
+    height:300px;
+}
+
+ /* doc-card css */
+
+ .appoint-sec{
+    display:flex;
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f1eff4;
+}
+.appointment-cards-dashboard{
+  height:195px;
+  width: 250px;
+  border-radius: 10px;
+  margin-left: 40px;  
+  background-color: #d9e0f0;
+}
+
+.scroll-bar{
+    display: grid;
+    overflow-x: scroll;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+
+.scroll-bar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.date-sec{
+    height:50px;
+    background-color:#3c3f5c ;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date{
+    color: white;
+}
+
+.status{
+    display: inline-block;
+    margin: 12px;
+}
+.docname,.time{
+    margin:12px;
+}
+.status-button{
+    display: inline-block;
+    padding: 10px;
+    background-color: #3c3f5c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.status-button:hover{
+    border-style:solid ;
+    border-color:#3c3f5c ;
+    background-color: white;
+    color: #3c3f5c;
+}
+
+.status-button:active{
+    background-color: #3c3f5c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* home container css */
+
+/* Your existing .header styles here */
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.left-half, .right-half {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-half {
+    /* Add styles f or the left half if needed */
+}
+
+.right-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Adjust background color as needed */
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 55px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* width: 120px; */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* 
+header css */
+
+
+.header {
+    display: flex;
+    height: 70px;
+    align-items: top;
+    background-color: #3c3f5c;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.right-section,
+.left-section {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.right-section {
+    width: 32%;
+    justify-content: space-between;
+    margin-right: 50px;
+
+}
+
+.left-section {
+    padding-left: 30px;
+    width: 51%;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.company-name{
+    color:white;
+}
+
+.home-text,.login-text,.signup-text,.aboutus-text{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Media queries for header on smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 70px; /* Adjust the header height for smaller screens */
+    }
+
+    .right-section {
+        width: 50%; /* Reduce the width of the right section */
+        margin-right: 10px; /* Adjust the margin for spacing */
+    }
+
+    .left-section {
+        width: 50%; /* Reduce the width of the left section */
+    }
+
+    .logo {
+        height: 48px; /* Adjust the logo size for smaller screens */
+        margin-left: 10px; /* Adjust the margin for spacing */
+        margin-right: 20px; /* Adjust the margin for spacing */
+    }
+
+
+    @media screen and (max-width: 480px) {
+        .header {
+            height: 50px; /* Adjust the header height for mobile phones */
+        }
+
+        .right-section, .left-section {
+            width: 100%; /* Take full width on mobile phones */
+        }
+
+        .right-section {
+            display: flex;
+            justify-content: space-between; /* Align items in right section */
+            padding: 0 10px; /* Add padding for spacing */
+        }
+
+        .logo {
+            height: 30px; /* Adjust the logo size for mobile phones */
+            margin-left: 10px; /* Adjust the margin for spacing */
+            margin-right: 10px; /* Adjust the margin for spacing */
+        }
+
+        /* You can add additional styles as needed for smaller screens */
+    }
+}
+
+/* signup container css */
+
+/* Your existing .header styles here */
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 505px;
+}
+
+.left-half, .right-half {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-half{
+    /* Add styles for the left half if needed */
+}
+
+.right-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Adjust background color as needed */
+}
+
+.sign-up-box {
+    background-color: #fff;
+    margin: 15px !important; 
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.sign-up-box h2 {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* width: 120px; */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content in a column on smaller screens */
+        align-items: center;
+    }
+
+    .right-half {
+        width: 100%;
+    }
+
+    .login-box, .sign-up-box {
+        width: 100%;
+        max-width: 100%; /* Take the full width on smaller screens */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
+/* slot container css */
+
+.hospital-button{
+    
+    width: calc(22% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.hospital-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.specialization-button{
+    
+    width: calc(22% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.specialization-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.slot-button{
+    
+    width: calc(20% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.slots-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.slots-dep{
+    background-color: #d2d5ed;
+    border-radius: 10px;
+    padding: 30px 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.doctor-button{
+    
+    width: calc(22% - 25px); /* 25% width for each button with some spacing */
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.doctors-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pay{
+    margin: 5px;
+    padding: 18px;
+    text-align: center;
+    background-color: #5c618d ; /* different color code*/
+    border-radius:10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.upiid-input{
+    margin: 5px;
+    padding: 15px 100px;
+    text-align: center;
+    border-color:#5c618d ;
+    border-radius:10px;
+    color: #fff;
+    border-style:solid;
+    cursor: pointer;
+}
+
+
+/* slot header css */
+
+.header {
+    display: flex;
+    height: 70px;
+    align-items: top;
+    background-color: #3c3f5c;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.right-section,
+.left-section {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.right-section {
+    width: 25%;
+    justify-content: space-between;
+    margin-right: 50px;
+
+}
+
+.left-section {
+    padding-left: 30px;
+    width: 51%;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.company-name{
+    color:white;
+}
+
+.home-text,.login-text,.signup-text,.aboutus-text{
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Media queries for header on smaller screens */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 70px; /* Adjust the header height for smaller screens */
+    }
+
+    .right-section {
+        width: 50%; /* Reduce the width of the right section */
+        margin-right: 10px; /* Adjust the margin for spacing */
+    }
+
+    .left-section {
+        width: 50%; /* Reduce the width of the left section */
+    }
+
+    .logo {
+        height: 48px; /* Adjust the logo size for smaller screens */
+        margin-left: 10px; /* Adjust the margin for spacing */
+        margin-right: 20px; /* Adjust the margin for spacing */
+    }
+
+
+    @media screen and (max-width: 480px) {
+        .header {
+            height: 50px; /* Adjust the header height for mobile phones */
+        }
+
+        .right-section, .left-section {
+            width: 100%; /* Take full width on mobile phones */
+        }
+
+        .right-section {
+            display: flex;
+            justify-content: space-between; /* Align items in right section */
+            padding: 0 10px; /* Add padding for spacing */
+        }
+
+        .logo {
+            height: 30px; /* Adjust the logo size for mobile phones */
+            margin-left: 10px; /* Adjust the margin for spacing */
+            margin-right: 10px; /* Adjust the margin for spacing */
+        }
+
+        /* You can add additional styles as needed for smaller screens */
+    }
+}
+
+/*my appoint style app card*/
+
+.appoint-sec{
+    display:flex;
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f1eff4;
+}
+.appointment-cards{
+  height:220px;
+  width: calc(27% - 65px);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  margin-left: 40px;  
+  background-color: #d9e0f0;
+}
+
+.appointments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+
+.scroll-bar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.date-sec{
+    height:50px;
+    background-color:#3c3f5c ;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date{
+    color: white;
+}
+
+.status{
+    display: inline-block;
+    margin: 12px;
+}
+.docname,.time,.hosname{
+    margin:12px;
+}
+.status-button{
+    display: inline-block;
+    padding: 10px;
+    background-color: #3c3f5c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.status-button:hover{
+    border-style:solid ;
+    border-color:#3c3f5c ;
+    background-color: white;
+    color: #3c3f5c;
+}
+
+.status-button:active{
+    background-color: #3c3f5c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* home css */
+.container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.greetings-home {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.book-app-button{
+    margin-top: 25px;
+    padding: 20px 60px;
+    background-color:#3c3f5c;
+    color: aliceblue;
+    border:none;
+    border-radius: 7px;
+}
+
+
+.book-app-button:hover {
+    background-color:aliceblue;
+    color:#3c3f5c;
+    border-style: solid;
+}
+
+.book-app-button:active {
+    background-color:#3c3f5c;
+    color: aliceblue;
+    border:none;
+    opacity:0.8;
+ }
+
