@@ -28,7 +28,7 @@
 
 .greeting{
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Montserrat;
 }
 
 .book-app-dashboard{
@@ -38,7 +38,7 @@
     border: none;
     background-color: #3c3f5c;
     color:white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Montserrat;
     border-radius: 6px;
 }
 .book-app-dashboard:hover{
@@ -170,6 +170,7 @@
     width: 100%;
     max-width: 450px;
     text-align: center;
+    
 }
 
 .login-box h2 {
@@ -198,8 +199,8 @@ input[type="date"] {
     outline: none;
 }
 
-button {
-    background-color: #007BFF;
+.login-button,.signup-button {
+    background-color: #3c3f5c;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -208,9 +209,19 @@ button {
     /* width: 120px; */
 }
 
-button:hover {
-    background-color: #0056b3;
+
+.login-button:hover , .signup-button:hover{
+    background-color: #3c3f5c;
+    color: #fff;
+    opacity: 0.9;
 }
+
+.login-button:active,.signup-button:active {
+    background-color: #3c3f5c;
+    color: #fff;
+    opacity: 0.7;
+}
+
 /* 
 header css */
 
@@ -257,7 +268,8 @@ header css */
 
 .home-text,.login-text,.signup-text,.aboutus-text{
     color:white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Montserrat;
+    cursor: pointer;
 }
 
 /* Media queries for header on smaller screens */
@@ -371,19 +383,7 @@ input[type="date"] {
     outline: none;
 }
 
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-    /* width: 120px; */
-}
 
-button:hover {
-    background-color: #0056b3;
-}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -410,7 +410,7 @@ button:hover {
 /* slot container css */
 
 .hospital-button{
-    
+    font-family: Montserrat;
     width: calc(22% - 25px); /* 25% width for each button with some spacing */
     margin: 5px;
     padding: 20px;
@@ -428,7 +428,7 @@ button:hover {
 }
 
 .specialization-button{
-    
+    font-family: Montserrat;
     width: calc(22% - 25px); /* 25% width for each button with some spacing */
     margin: 5px;
     padding: 20px;
@@ -446,7 +446,7 @@ button:hover {
 }
 
 .slot-button{
-    
+    font-family: Montserrat;
     width: calc(20% - 25px); /* 25% width for each button with some spacing */
     margin: 5px;
     padding: 20px;
@@ -472,16 +472,26 @@ button:hover {
 }
 
 .doctor-button{
-    
+    font-family: Montserrat;
     width: calc(22% - 25px); /* 25% width for each button with some spacing */
     margin: 5px;
     padding: 20px;
     text-align: center;
-    background-color: #5c618d ; /* different color code*/
+    background-color: #5c618d; /* different color code*/
     border-radius:10px;
     color: #fff;
     border: none;
     cursor: pointer;
+}
+.doctor-button:hover,.slot-button:hover,.hospital-button:hover,.specialization-button:hover,.pay:hover{
+    color: #5c618d;
+    background-color: #fff;
+    border-style: solid;
+}
+.doctor-button:active,.slot-button:active,.hospital-button:active,.specialization-button:active,.pay:active{
+    background-color: #5c618d;
+    color: #fff;
+    opacity:0.8;
 }
 .doctors-options{
     display: flex;
@@ -496,19 +506,19 @@ button:hover {
     background-color: #5c618d ; /* different color code*/
     border-radius:10px;
     color: #fff;
+    font-family:Montserrat;
     border: none;
     cursor: pointer;
 }
 
 .upiid-input{
-    margin: 5px;
-    padding: 15px 100px;
+    margin: 5px; 
+    padding: 25px 150px;
     text-align: center;
     border-color:#5c618d ;
     border-radius:10px;
     color: #fff;
     border-style:solid;
-    cursor: pointer;
 }
 
 
@@ -556,7 +566,7 @@ button:hover {
 
 .home-text,.login-text,.signup-text,.aboutus-text{
     color:white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Montserrat;
 }
 
 /* Media queries for header on smaller screens */
@@ -640,6 +650,7 @@ button:hover {
 .date-sec{
     height:50px;
     background-color:#3c3f5c ;
+
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius:0px ;
@@ -658,6 +669,7 @@ button:hover {
 }
 .docname,.time,.hosname{
     margin:12px;
+    font-family: Montserrat;
 }
 .status-button{
     display: inline-block;
@@ -665,6 +677,7 @@ button:hover {
     background-color: #3c3f5c;
     border: none;
     border-radius: 5px;
+    font-family: Montserrat;
     color: white;
 }
 .status-button:hover{
@@ -693,13 +706,14 @@ button:hover {
 
 .greetings-home {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Montserrat;
 }
 
 .book-app-button{
     margin-top: 25px;
     padding: 20px 60px;
     background-color:#3c3f5c;
+    font-family: Montserrat;
     color: aliceblue;
     border:none;
     border-radius: 7px;
@@ -719,3 +733,29 @@ button:hover {
     opacity:0.8;
  }
 
+.signup-heading{
+    font-family: Montserrat;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.appointment-text{
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 28px;
+    padding: 20px 30px;
+
+}
+
+.payment-font{
+    font-family:Montserrat ;
+    margin: 10px 20px;
+}
+
+.payments-text , .doctors-text,.free-slots-text,.specialist-text,.hospital-text{
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 20px 30px;
+}
